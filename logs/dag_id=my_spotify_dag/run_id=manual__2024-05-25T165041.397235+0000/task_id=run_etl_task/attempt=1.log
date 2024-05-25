@@ -1,0 +1,75 @@
+[2024-05-25T16:50:48.153+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-25T16:50:48.173+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_spotify_dag.run_etl_task manual__2024-05-25T16:50:41.397235+00:00 [queued]>
+[2024-05-25T16:50:48.180+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_spotify_dag.run_etl_task manual__2024-05-25T16:50:41.397235+00:00 [queued]>
+[2024-05-25T16:50:48.181+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-05-25T16:50:48.192+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_etl_task> on 2024-05-25 16:50:41.397235+00:00
+[2024-05-25T16:50:48.200+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=265) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-25T16:50:48.201+0000] {standard_task_runner.py:63} INFO - Started process 267 to run task
+[2024-05-25T16:50:48.201+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'my_spotify_dag', 'run_etl_task', 'manual__2024-05-25T16:50:41.397235+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/spotify_dag.py', '--cfg-path', '/tmp/tmpkjsoc6t4']
+[2024-05-25T16:50:48.202+0000] {standard_task_runner.py:91} INFO - Job 22: Subtask run_etl_task
+[2024-05-25T16:50:48.242+0000] {task_command.py:426} INFO - Running <TaskInstance: my_spotify_dag.run_etl_task manual__2024-05-25T16:50:41.397235+00:00 [running]> on host 146d694e16a6
+[2024-05-25T16:50:48.323+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Kaz' AIRFLOW_CTX_DAG_ID='my_spotify_dag' AIRFLOW_CTX_TASK_ID='run_etl_task' AIRFLOW_CTX_EXECUTION_DATE='2024-05-25T16:50:41.397235+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-25T16:50:41.397235+00:00'
+[2024-05-25T16:50:48.326+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-25T16:50:48.339+0000] {logging_mixin.py:188} INFO - started
+[2024-05-25T16:50:48.641+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+1                                          departure!  ... 2024-05-25 23:46:01
+2                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+3                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+4                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+5                                 Good Morning World!  ... 2024-05-25 23:25:52
+6                                        OVER THE TOP  ... 2024-05-25 23:20:26
+7                                departure! - TV Size  ... 2024-05-25 23:15:24
+8            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+9                        Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+10            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+11                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+12    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+13        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+14                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+15                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+16  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+17                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+18  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+19                                     Because of you  ... 2024-05-25 22:24:18
+20                                             Heaven  ... 2024-05-25 22:19:16
+21                                           Only You  ... 2024-05-25 22:15:43
+22                                              SPOT!  ... 2024-05-25 22:11:39
+23                                           The Boys  ... 2024-05-25 22:08:50
+24                                          Energetic  ... 2024-05-25 22:04:02
+25                                               Hush  ... 2024-05-25 22:00:52
+26                                          Something  ... 2024-05-25 21:56:44
+27                                        Don't Leave  ... 2024-05-25 21:53:23
+28                                      Give it to me  ... 2024-05-25 21:49:36
+29                                             NoNoNo  ... 2024-05-25 21:46:15
+30                                              Alone  ... 2024-05-25 21:41:17
+31                                         Lion Heart  ... 2024-05-25 21:37:50
+32                                            Mr. Chu  ... 2024-05-25 21:33:26
+33                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+34                                               보여줄게  ... 2024-05-25 21:25:48
+35                                          Haru Haru  ... 2024-05-25 21:21:28
+36                                                Gee  ... 2024-05-25 21:17:10
+37                                               STEP  ... 2024-05-25 21:12:31
+38                                          Up & Down  ... 2024-05-25 21:09:07
+39                                              Genie  ... 2024-05-25 21:05:26
+40                                                Mr.  ... 2024-05-25 21:01:37
+41                                            Go Away  ... 2024-05-25 20:57:47
+42                                          Roly-Poly  ... 2024-05-25 20:54:07
+43                                        I GOT A BOY  ... 2024-05-25 20:50:01
+44                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+45                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+46                                      I Am The Best  ... 2024-05-25 20:36:59
+47                                               FIRE  ... 2024-05-25 20:33:30
+48                                     COME BACK HOME  ... 2024-05-25 20:29:44
+49                                               Lies  ... 2024-05-25 20:25:54
+
+[50 rows x 5 columns]
+[2024-05-25T16:50:48.655+0000] {base.py:84} INFO - Using connection ID 'postgre_spotify_sql' for task execution.
+[2024-05-25T16:50:48.769+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-25T16:50:48.770+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-25T16:50:48.781+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=my_spotify_dag, task_id=run_etl_task, run_id=manual__2024-05-25T16:50:41.397235+00:00, execution_date=20240525T165041, start_date=20240525T165048, end_date=20240525T165048
+[2024-05-25T16:50:48.817+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-25T16:50:48.833+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-25T16:50:48.835+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,2180 @@
+[2024-05-25T16:38:49.453+0000] {processor.py:161} INFO - Started process (PID=34) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:38:49.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:38:49.457+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:38:49.457+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:38:56.231+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:38:56.219+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 7, in <module>
+    f = open(r'E:/Mine/Project/access_token.txt')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:/Mine/Project/access_token.txt'
+[2024-05-25T16:38:56.234+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:38:56.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 6.942 seconds
+[2024-05-25T16:39:26.815+0000] {processor.py:161} INFO - Started process (PID=41) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:39:26.819+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:39:26.837+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:39:26.834+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:39:28.113+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:39:28.104+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 7, in <module>
+    f = open(r'E:/Mine/Project/access_token.txt')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:/Mine/Project/access_token.txt'
+[2024-05-25T16:39:28.115+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:39:28.168+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.396 seconds
+[2024-05-25T16:39:57.941+0000] {processor.py:161} INFO - Started process (PID=49) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:39:57.942+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:39:57.945+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:39:57.944+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:39:59.546+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:39:59.532+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 70, in <module>
+    spotify_etl()
+  File "/opt/airflow/dags/extract_load.py", line 65, in spotify_etl
+    res_df = tranformed_df(df1)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/extract_load.py", line 51, in tranformed_df
+    tranform_df['release'] = pd.to_datetime(load_df['release'].apply(lambda x : x[:4]))
+    ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'tranform_df' where it is not associated with a value
+[2024-05-25T16:39:59.549+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:39:59.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.659 seconds
+[2024-05-25T16:40:24.527+0000] {processor.py:161} INFO - Started process (PID=57) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:40:24.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:40:24.533+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:40:24.532+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:40:25.608+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:40:25.604+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 70, in <module>
+    spotify_etl()
+  File "/opt/airflow/dags/extract_load.py", line 65, in spotify_etl
+    res_df = tranformed_df(df1)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/extract_load.py", line 51, in tranformed_df
+    tranform_df['release'] = pd.to_datetime(load_df['release'].apply(lambda x : x[:4]))
+    ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'tranform_df' where it is not associated with a value
+[2024-05-25T16:40:25.609+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:40:25.625+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.115 seconds
+[2024-05-25T16:40:55.678+0000] {processor.py:161} INFO - Started process (PID=65) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:40:55.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:40:55.681+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:40:55.680+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:40:56.454+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:40:56.449+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 70, in <module>
+    spotify_etl()
+  File "/opt/airflow/dags/extract_load.py", line 65, in spotify_etl
+    res_df = tranformed_df(df1)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/extract_load.py", line 51, in tranformed_df
+    tranform_df['release'] = pd.to_datetime(load_df['release'].apply(lambda x : x[:4]))
+    ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'tranform_df' where it is not associated with a value
+[2024-05-25T16:40:56.456+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:40:56.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.801 seconds
+[2024-05-25T16:41:26.646+0000] {processor.py:161} INFO - Started process (PID=73) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:41:26.647+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:41:26.649+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:41:26.649+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:41:27.472+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:41:27.467+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 70, in <module>
+    spotify_etl()
+  File "/opt/airflow/dags/extract_load.py", line 65, in spotify_etl
+    res_df = tranformed_df(df1)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/extract_load.py", line 51, in tranformed_df
+    tranform_df['release'] = pd.to_datetime(load_df['release'].apply(lambda x : x[:4]))
+    ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'tranform_df' where it is not associated with a value
+[2024-05-25T16:41:27.473+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:41:27.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.846 seconds
+[2024-05-25T16:41:57.672+0000] {processor.py:161} INFO - Started process (PID=81) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:41:57.673+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:41:57.675+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:41:57.674+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:41:58.435+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:41:58.431+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 70, in <module>
+    spotify_etl()
+  File "/opt/airflow/dags/extract_load.py", line 65, in spotify_etl
+    res_df = tranformed_df(df1)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/extract_load.py", line 51, in tranformed_df
+    tranform_df['release'] = pd.to_datetime(load_df['release'].apply(lambda x : x[:4]))
+    ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'tranform_df' where it is not associated with a value
+[2024-05-25T16:41:58.437+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:41:58.449+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.786 seconds
+[2024-05-25T16:42:28.607+0000] {processor.py:161} INFO - Started process (PID=89) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:42:28.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:42:28.610+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:42:28.609+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:42:29.648+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:42:29.643+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 70, in <module>
+    spotify_etl()
+  File "/opt/airflow/dags/extract_load.py", line 65, in spotify_etl
+    res_df = tranformed_df(df1)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/extract_load.py", line 54, in tranformed_df
+    load_df['played_at'] = pd.to_datetime(df['played_at']).dt.tz_convert('Etc/GMT-7')
+                                          ^^
+NameError: name 'df' is not defined
+[2024-05-25T16:42:29.649+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:42:29.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.062 seconds
+[2024-05-25T16:42:30.626+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:42:30.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:42:30.629+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:42:30.629+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:42:33.388+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:42:33.376+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 70, in <module>
+    spotify_etl()
+  File "/opt/airflow/dags/extract_load.py", line 65, in spotify_etl
+    res_df = tranformed_df(df1)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/extract_load.py", line 54, in tranformed_df
+    load_df['played_at'] = pd.to_datetime(df['played_at']).dt.tz_convert('Etc/GMT-7')
+                                          ^^
+NameError: name 'df' is not defined
+[2024-05-25T16:42:33.392+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:42:33.432+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 2.810 seconds
+[2024-05-25T16:43:03.640+0000] {processor.py:161} INFO - Started process (PID=105) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:03.642+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:43:03.644+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:03.643+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:04.431+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:04.425+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/spotify_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/spotify_dag.py", line 13, in <module>
+    from extract_load import spotify_etl
+  File "/opt/airflow/dags/extract_load.py", line 70, in <module>
+    spotify_etl()
+  File "/opt/airflow/dags/extract_load.py", line 65, in spotify_etl
+    res_df = tranformed_df(df1)
+             ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/extract_load.py", line 54, in tranformed_df
+    load_df['played_at'] = pd.to_datetime(df['played_at']).dt.tz_convert('Etc/GMT-7')
+                                          ^^
+NameError: name 'df' is not defined
+[2024-05-25T16:43:04.432+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:04.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.812 seconds
+[2024-05-25T16:43:11.516+0000] {processor.py:161} INFO - Started process (PID=107) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:11.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:43:11.518+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:11.518+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:12.432+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:18:25
+1           1           1           1        1 2024-05-25 20:21:58
+2           1           1           1        1 2024-05-25 20:25:54
+3           1           1           1        1 2024-05-25 20:29:44
+4           1           1           1        1 2024-05-25 20:33:30
+5           1           1           1        1 2024-05-25 20:36:59
+6           1           1           1        1 2024-05-25 20:40:58
+7           1           1           1        1 2024-05-25 20:45:29
+8           1           1           1        1 2024-05-25 20:50:01
+9           1           1           1        1 2024-05-25 20:54:07
+10          1           1           1        1 2024-05-25 20:57:47
+11          1           1           1        1 2024-05-25 21:01:37
+12          1           1           1        1 2024-05-25 21:05:26
+13          1           1           1        1 2024-05-25 21:09:07
+14          1           1           1        1 2024-05-25 21:12:31
+15          1           1           1        1 2024-05-25 21:17:10
+16          1           1           1        1 2024-05-25 21:21:28
+17          1           1           1        1 2024-05-25 21:25:48
+18          1           1           1        1 2024-05-25 21:29:51
+19          1           1           1        1 2024-05-25 21:33:26
+20          1           1           1        1 2024-05-25 21:37:50
+21          1           1           1        1 2024-05-25 21:41:17
+22          1           1           1        1 2024-05-25 21:46:15
+23          1           1           1        1 2024-05-25 21:49:36
+24          1           1           1        1 2024-05-25 21:53:23
+25          1           1           1        1 2024-05-25 21:56:44
+26          1           1           1        1 2024-05-25 22:00:52
+27          1           1           1        1 2024-05-25 22:04:02
+28          1           1           1        1 2024-05-25 22:08:50
+29          1           1           1        1 2024-05-25 22:11:39
+30          1           1           1        1 2024-05-25 22:15:43
+31          1           1           1        1 2024-05-25 22:19:16
+32          1           1           1        1 2024-05-25 22:24:18
+33          1           1           1        1 2024-05-25 22:37:14
+34          1           1           1        1 2024-05-25 22:42:13
+35          1           1           1        1 2024-05-25 22:45:44
+36          1           1           1        1 2024-05-25 22:50:13
+37          1           1           1        1 2024-05-25 22:53:41
+38          1           1           1        1 2024-05-25 22:58:36
+39          1           1           1        1 2024-05-25 23:03:37
+40          1           1           1        1 2024-05-25 23:06:08
+41          1           1           1        1 2024-05-25 23:07:39
+42          1           1           1        1 2024-05-25 23:09:14
+43          1           1           1        1 2024-05-25 23:12:58
+44          1           1           1        1 2024-05-25 23:15:24
+45          1           1           1        1 2024-05-25 23:20:26
+46          1           1           1        1 2024-05-25 23:25:52
+47          1           1           1        1 2024-05-25 23:30:29
+48          1           1           1        1 2024-05-25 23:37:02
+49          1           1           1        1 2024-05-25 23:40:42
+[2024-05-25T16:43:12.478+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:12.826+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:12.825+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:my_spotify_dag
+[2024-05-25T16:43:12.834+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:12.833+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:my_spotify_dag
+[2024-05-25T16:43:12.839+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:12.839+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:my_spotify_dag
+[2024-05-25T16:43:12.840+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:12.839+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:43:12.847+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:12.847+0000] {dag.py:3118} INFO - Creating ORM DAG for my_spotify_dag
+[2024-05-25T16:43:12.856+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:12.856+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:43:12.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.359 seconds
+[2024-05-25T16:43:43.349+0000] {processor.py:161} INFO - Started process (PID=115) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:43.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:43:43.373+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:43.371+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:50.437+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:18:25
+1           1           1           1        1 2024-05-25 20:21:58
+2           1           1           1        1 2024-05-25 20:25:54
+3           1           1           1        1 2024-05-25 20:29:44
+4           1           1           1        1 2024-05-25 20:33:30
+5           1           1           1        1 2024-05-25 20:36:59
+6           1           1           1        1 2024-05-25 20:40:58
+7           1           1           1        1 2024-05-25 20:45:29
+8           1           1           1        1 2024-05-25 20:50:01
+9           1           1           1        1 2024-05-25 20:54:07
+10          1           1           1        1 2024-05-25 20:57:47
+11          1           1           1        1 2024-05-25 21:01:37
+12          1           1           1        1 2024-05-25 21:05:26
+13          1           1           1        1 2024-05-25 21:09:07
+14          1           1           1        1 2024-05-25 21:12:31
+15          1           1           1        1 2024-05-25 21:17:10
+16          1           1           1        1 2024-05-25 21:21:28
+17          1           1           1        1 2024-05-25 21:25:48
+18          1           1           1        1 2024-05-25 21:29:51
+19          1           1           1        1 2024-05-25 21:33:26
+20          1           1           1        1 2024-05-25 21:37:50
+21          1           1           1        1 2024-05-25 21:41:17
+22          1           1           1        1 2024-05-25 21:46:15
+23          1           1           1        1 2024-05-25 21:49:36
+24          1           1           1        1 2024-05-25 21:53:23
+25          1           1           1        1 2024-05-25 21:56:44
+26          1           1           1        1 2024-05-25 22:00:52
+27          1           1           1        1 2024-05-25 22:04:02
+28          1           1           1        1 2024-05-25 22:08:50
+29          1           1           1        1 2024-05-25 22:11:39
+30          1           1           1        1 2024-05-25 22:15:43
+31          1           1           1        1 2024-05-25 22:19:16
+32          1           1           1        1 2024-05-25 22:24:18
+33          1           1           1        1 2024-05-25 22:37:14
+34          1           1           1        1 2024-05-25 22:42:13
+35          1           1           1        1 2024-05-25 22:45:44
+36          1           1           1        1 2024-05-25 22:50:13
+37          1           1           1        1 2024-05-25 22:53:41
+38          1           1           1        1 2024-05-25 22:58:36
+39          1           1           1        1 2024-05-25 23:03:37
+40          1           1           1        1 2024-05-25 23:06:08
+41          1           1           1        1 2024-05-25 23:07:39
+42          1           1           1        1 2024-05-25 23:09:14
+43          1           1           1        1 2024-05-25 23:12:58
+44          1           1           1        1 2024-05-25 23:15:24
+45          1           1           1        1 2024-05-25 23:20:26
+46          1           1           1        1 2024-05-25 23:25:52
+47          1           1           1        1 2024-05-25 23:30:29
+48          1           1           1        1 2024-05-25 23:37:02
+49          1           1           1        1 2024-05-25 23:40:42
+[2024-05-25T16:43:50.770+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:43:50.866+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:50.866+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:43:50.901+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:43:50.901+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:43:50.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 7.633 seconds
+[2024-05-25T16:44:21.164+0000] {processor.py:161} INFO - Started process (PID=123) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:44:21.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:44:21.182+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:44:21.180+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:44:22.940+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:18:25
+1           1           1           1        1 2024-05-25 20:21:58
+2           1           1           1        1 2024-05-25 20:25:54
+3           1           1           1        1 2024-05-25 20:29:44
+4           1           1           1        1 2024-05-25 20:33:30
+5           1           1           1        1 2024-05-25 20:36:59
+6           1           1           1        1 2024-05-25 20:40:58
+7           1           1           1        1 2024-05-25 20:45:29
+8           1           1           1        1 2024-05-25 20:50:01
+9           1           1           1        1 2024-05-25 20:54:07
+10          1           1           1        1 2024-05-25 20:57:47
+11          1           1           1        1 2024-05-25 21:01:37
+12          1           1           1        1 2024-05-25 21:05:26
+13          1           1           1        1 2024-05-25 21:09:07
+14          1           1           1        1 2024-05-25 21:12:31
+15          1           1           1        1 2024-05-25 21:17:10
+16          1           1           1        1 2024-05-25 21:21:28
+17          1           1           1        1 2024-05-25 21:25:48
+18          1           1           1        1 2024-05-25 21:29:51
+19          1           1           1        1 2024-05-25 21:33:26
+20          1           1           1        1 2024-05-25 21:37:50
+21          1           1           1        1 2024-05-25 21:41:17
+22          1           1           1        1 2024-05-25 21:46:15
+23          1           1           1        1 2024-05-25 21:49:36
+24          1           1           1        1 2024-05-25 21:53:23
+25          1           1           1        1 2024-05-25 21:56:44
+26          1           1           1        1 2024-05-25 22:00:52
+27          1           1           1        1 2024-05-25 22:04:02
+28          1           1           1        1 2024-05-25 22:08:50
+29          1           1           1        1 2024-05-25 22:11:39
+30          1           1           1        1 2024-05-25 22:15:43
+31          1           1           1        1 2024-05-25 22:19:16
+32          1           1           1        1 2024-05-25 22:24:18
+33          1           1           1        1 2024-05-25 22:37:14
+34          1           1           1        1 2024-05-25 22:42:13
+35          1           1           1        1 2024-05-25 22:45:44
+36          1           1           1        1 2024-05-25 22:50:13
+37          1           1           1        1 2024-05-25 22:53:41
+38          1           1           1        1 2024-05-25 22:58:36
+39          1           1           1        1 2024-05-25 23:03:37
+40          1           1           1        1 2024-05-25 23:06:08
+41          1           1           1        1 2024-05-25 23:07:39
+42          1           1           1        1 2024-05-25 23:09:14
+43          1           1           1        1 2024-05-25 23:12:58
+44          1           1           1        1 2024-05-25 23:15:24
+45          1           1           1        1 2024-05-25 23:20:26
+46          1           1           1        1 2024-05-25 23:25:52
+47          1           1           1        1 2024-05-25 23:30:29
+48          1           1           1        1 2024-05-25 23:37:02
+49          1           1           1        1 2024-05-25 23:40:42
+[2024-05-25T16:44:22.949+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:44:22.974+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:44:22.973+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:44:22.995+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:44:22.995+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:44:23.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.879 seconds
+[2024-05-25T16:44:53.190+0000] {processor.py:161} INFO - Started process (PID=131) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:44:53.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:44:53.195+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:44:53.194+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:44:54.145+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:18:25
+1           1           1           1        1 2024-05-25 20:21:58
+2           1           1           1        1 2024-05-25 20:25:54
+3           1           1           1        1 2024-05-25 20:29:44
+4           1           1           1        1 2024-05-25 20:33:30
+5           1           1           1        1 2024-05-25 20:36:59
+6           1           1           1        1 2024-05-25 20:40:58
+7           1           1           1        1 2024-05-25 20:45:29
+8           1           1           1        1 2024-05-25 20:50:01
+9           1           1           1        1 2024-05-25 20:54:07
+10          1           1           1        1 2024-05-25 20:57:47
+11          1           1           1        1 2024-05-25 21:01:37
+12          1           1           1        1 2024-05-25 21:05:26
+13          1           1           1        1 2024-05-25 21:09:07
+14          1           1           1        1 2024-05-25 21:12:31
+15          1           1           1        1 2024-05-25 21:17:10
+16          1           1           1        1 2024-05-25 21:21:28
+17          1           1           1        1 2024-05-25 21:25:48
+18          1           1           1        1 2024-05-25 21:29:51
+19          1           1           1        1 2024-05-25 21:33:26
+20          1           1           1        1 2024-05-25 21:37:50
+21          1           1           1        1 2024-05-25 21:41:17
+22          1           1           1        1 2024-05-25 21:46:15
+23          1           1           1        1 2024-05-25 21:49:36
+24          1           1           1        1 2024-05-25 21:53:23
+25          1           1           1        1 2024-05-25 21:56:44
+26          1           1           1        1 2024-05-25 22:00:52
+27          1           1           1        1 2024-05-25 22:04:02
+28          1           1           1        1 2024-05-25 22:08:50
+29          1           1           1        1 2024-05-25 22:11:39
+30          1           1           1        1 2024-05-25 22:15:43
+31          1           1           1        1 2024-05-25 22:19:16
+32          1           1           1        1 2024-05-25 22:24:18
+33          1           1           1        1 2024-05-25 22:37:14
+34          1           1           1        1 2024-05-25 22:42:13
+35          1           1           1        1 2024-05-25 22:45:44
+36          1           1           1        1 2024-05-25 22:50:13
+37          1           1           1        1 2024-05-25 22:53:41
+38          1           1           1        1 2024-05-25 22:58:36
+39          1           1           1        1 2024-05-25 23:03:37
+40          1           1           1        1 2024-05-25 23:06:08
+41          1           1           1        1 2024-05-25 23:07:39
+42          1           1           1        1 2024-05-25 23:09:14
+43          1           1           1        1 2024-05-25 23:12:58
+44          1           1           1        1 2024-05-25 23:15:24
+45          1           1           1        1 2024-05-25 23:20:26
+46          1           1           1        1 2024-05-25 23:25:52
+47          1           1           1        1 2024-05-25 23:30:29
+48          1           1           1        1 2024-05-25 23:37:02
+49          1           1           1        1 2024-05-25 23:40:42
+[2024-05-25T16:44:54.151+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:44:54.173+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:44:54.172+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:44:54.188+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:44:54.188+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:44:54.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.021 seconds
+[2024-05-25T16:45:16.327+0000] {processor.py:161} INFO - Started process (PID=139) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:45:16.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:45:16.330+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:45:16.329+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:45:17.152+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:18:25
+1           1           1           1        1 2024-05-25 20:21:58
+2           1           1           1        1 2024-05-25 20:25:54
+3           1           1           1        1 2024-05-25 20:29:44
+4           1           1           1        1 2024-05-25 20:33:30
+5           1           1           1        1 2024-05-25 20:36:59
+6           1           1           1        1 2024-05-25 20:40:58
+7           1           1           1        1 2024-05-25 20:45:29
+8           1           1           1        1 2024-05-25 20:50:01
+9           1           1           1        1 2024-05-25 20:54:07
+10          1           1           1        1 2024-05-25 20:57:47
+11          1           1           1        1 2024-05-25 21:01:37
+12          1           1           1        1 2024-05-25 21:05:26
+13          1           1           1        1 2024-05-25 21:09:07
+14          1           1           1        1 2024-05-25 21:12:31
+15          1           1           1        1 2024-05-25 21:17:10
+16          1           1           1        1 2024-05-25 21:21:28
+17          1           1           1        1 2024-05-25 21:25:48
+18          1           1           1        1 2024-05-25 21:29:51
+19          1           1           1        1 2024-05-25 21:33:26
+20          1           1           1        1 2024-05-25 21:37:50
+21          1           1           1        1 2024-05-25 21:41:17
+22          1           1           1        1 2024-05-25 21:46:15
+23          1           1           1        1 2024-05-25 21:49:36
+24          1           1           1        1 2024-05-25 21:53:23
+25          1           1           1        1 2024-05-25 21:56:44
+26          1           1           1        1 2024-05-25 22:00:52
+27          1           1           1        1 2024-05-25 22:04:02
+28          1           1           1        1 2024-05-25 22:08:50
+29          1           1           1        1 2024-05-25 22:11:39
+30          1           1           1        1 2024-05-25 22:15:43
+31          1           1           1        1 2024-05-25 22:19:16
+32          1           1           1        1 2024-05-25 22:24:18
+33          1           1           1        1 2024-05-25 22:37:14
+34          1           1           1        1 2024-05-25 22:42:13
+35          1           1           1        1 2024-05-25 22:45:44
+36          1           1           1        1 2024-05-25 22:50:13
+37          1           1           1        1 2024-05-25 22:53:41
+38          1           1           1        1 2024-05-25 22:58:36
+39          1           1           1        1 2024-05-25 23:03:37
+40          1           1           1        1 2024-05-25 23:06:08
+41          1           1           1        1 2024-05-25 23:07:39
+42          1           1           1        1 2024-05-25 23:09:14
+43          1           1           1        1 2024-05-25 23:12:58
+44          1           1           1        1 2024-05-25 23:15:24
+45          1           1           1        1 2024-05-25 23:20:26
+46          1           1           1        1 2024-05-25 23:25:52
+47          1           1           1        1 2024-05-25 23:30:29
+48          1           1           1        1 2024-05-25 23:37:02
+49          1           1           1        1 2024-05-25 23:40:42
+[2024-05-25T16:45:17.158+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:45:19.178+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:45:19.178+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:45:19.192+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:45:19.192+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:45:19.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 2.958 seconds
+[2024-05-25T16:45:49.470+0000] {processor.py:161} INFO - Started process (PID=147) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:45:49.471+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:45:49.473+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:45:49.473+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:45:50.313+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:18:25
+1           1           1           1        1 2024-05-25 20:21:58
+2           1           1           1        1 2024-05-25 20:25:54
+3           1           1           1        1 2024-05-25 20:29:44
+4           1           1           1        1 2024-05-25 20:33:30
+5           1           1           1        1 2024-05-25 20:36:59
+6           1           1           1        1 2024-05-25 20:40:58
+7           1           1           1        1 2024-05-25 20:45:29
+8           1           1           1        1 2024-05-25 20:50:01
+9           1           1           1        1 2024-05-25 20:54:07
+10          1           1           1        1 2024-05-25 20:57:47
+11          1           1           1        1 2024-05-25 21:01:37
+12          1           1           1        1 2024-05-25 21:05:26
+13          1           1           1        1 2024-05-25 21:09:07
+14          1           1           1        1 2024-05-25 21:12:31
+15          1           1           1        1 2024-05-25 21:17:10
+16          1           1           1        1 2024-05-25 21:21:28
+17          1           1           1        1 2024-05-25 21:25:48
+18          1           1           1        1 2024-05-25 21:29:51
+19          1           1           1        1 2024-05-25 21:33:26
+20          1           1           1        1 2024-05-25 21:37:50
+21          1           1           1        1 2024-05-25 21:41:17
+22          1           1           1        1 2024-05-25 21:46:15
+23          1           1           1        1 2024-05-25 21:49:36
+24          1           1           1        1 2024-05-25 21:53:23
+25          1           1           1        1 2024-05-25 21:56:44
+26          1           1           1        1 2024-05-25 22:00:52
+27          1           1           1        1 2024-05-25 22:04:02
+28          1           1           1        1 2024-05-25 22:08:50
+29          1           1           1        1 2024-05-25 22:11:39
+30          1           1           1        1 2024-05-25 22:15:43
+31          1           1           1        1 2024-05-25 22:19:16
+32          1           1           1        1 2024-05-25 22:24:18
+33          1           1           1        1 2024-05-25 22:37:14
+34          1           1           1        1 2024-05-25 22:42:13
+35          1           1           1        1 2024-05-25 22:45:44
+36          1           1           1        1 2024-05-25 22:50:13
+37          1           1           1        1 2024-05-25 22:53:41
+38          1           1           1        1 2024-05-25 22:58:36
+39          1           1           1        1 2024-05-25 23:03:37
+40          1           1           1        1 2024-05-25 23:06:08
+41          1           1           1        1 2024-05-25 23:07:39
+42          1           1           1        1 2024-05-25 23:09:14
+43          1           1           1        1 2024-05-25 23:12:58
+44          1           1           1        1 2024-05-25 23:15:24
+45          1           1           1        1 2024-05-25 23:20:26
+46          1           1           1        1 2024-05-25 23:25:52
+47          1           1           1        1 2024-05-25 23:30:29
+48          1           1           1        1 2024-05-25 23:37:02
+49          1           1           1        1 2024-05-25 23:40:42
+[2024-05-25T16:45:50.319+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:45:50.336+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:45:50.336+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:45:50.350+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:45:50.350+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:45:50.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.898 seconds
+[2024-05-25T16:46:05.565+0000] {processor.py:161} INFO - Started process (PID=155) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:05.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:46:05.569+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:05.569+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:06.282+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:18:25
+1           1           1           1        1 2024-05-25 20:21:58
+2           1           1           1        1 2024-05-25 20:25:54
+3           1           1           1        1 2024-05-25 20:29:44
+4           1           1           1        1 2024-05-25 20:33:30
+5           1           1           1        1 2024-05-25 20:36:59
+6           1           1           1        1 2024-05-25 20:40:58
+7           1           1           1        1 2024-05-25 20:45:29
+8           1           1           1        1 2024-05-25 20:50:01
+9           1           1           1        1 2024-05-25 20:54:07
+10          1           1           1        1 2024-05-25 20:57:47
+11          1           1           1        1 2024-05-25 21:01:37
+12          1           1           1        1 2024-05-25 21:05:26
+13          1           1           1        1 2024-05-25 21:09:07
+14          1           1           1        1 2024-05-25 21:12:31
+15          1           1           1        1 2024-05-25 21:17:10
+16          1           1           1        1 2024-05-25 21:21:28
+17          1           1           1        1 2024-05-25 21:25:48
+18          1           1           1        1 2024-05-25 21:29:51
+19          1           1           1        1 2024-05-25 21:33:26
+20          1           1           1        1 2024-05-25 21:37:50
+21          1           1           1        1 2024-05-25 21:41:17
+22          1           1           1        1 2024-05-25 21:46:15
+23          1           1           1        1 2024-05-25 21:49:36
+24          1           1           1        1 2024-05-25 21:53:23
+25          1           1           1        1 2024-05-25 21:56:44
+26          1           1           1        1 2024-05-25 22:00:52
+27          1           1           1        1 2024-05-25 22:04:02
+28          1           1           1        1 2024-05-25 22:08:50
+29          1           1           1        1 2024-05-25 22:11:39
+30          1           1           1        1 2024-05-25 22:15:43
+31          1           1           1        1 2024-05-25 22:19:16
+32          1           1           1        1 2024-05-25 22:24:18
+33          1           1           1        1 2024-05-25 22:37:14
+34          1           1           1        1 2024-05-25 22:42:13
+35          1           1           1        1 2024-05-25 22:45:44
+36          1           1           1        1 2024-05-25 22:50:13
+37          1           1           1        1 2024-05-25 22:53:41
+38          1           1           1        1 2024-05-25 22:58:36
+39          1           1           1        1 2024-05-25 23:03:37
+40          1           1           1        1 2024-05-25 23:06:08
+41          1           1           1        1 2024-05-25 23:07:39
+42          1           1           1        1 2024-05-25 23:09:14
+43          1           1           1        1 2024-05-25 23:12:58
+44          1           1           1        1 2024-05-25 23:15:24
+45          1           1           1        1 2024-05-25 23:20:26
+46          1           1           1        1 2024-05-25 23:25:52
+47          1           1           1        1 2024-05-25 23:30:29
+48          1           1           1        1 2024-05-25 23:37:02
+49          1           1           1        1 2024-05-25 23:40:42
+[2024-05-25T16:46:06.297+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:06.453+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:06.452+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:46:06.479+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:06.479+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:46:06.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.950 seconds
+[2024-05-25T16:46:36.707+0000] {processor.py:161} INFO - Started process (PID=163) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:36.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:46:36.709+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:36.709+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:37.472+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:18:25
+1           1           1           1        1 2024-05-25 20:21:58
+2           1           1           1        1 2024-05-25 20:25:54
+3           1           1           1        1 2024-05-25 20:29:44
+4           1           1           1        1 2024-05-25 20:33:30
+5           1           1           1        1 2024-05-25 20:36:59
+6           1           1           1        1 2024-05-25 20:40:58
+7           1           1           1        1 2024-05-25 20:45:29
+8           1           1           1        1 2024-05-25 20:50:01
+9           1           1           1        1 2024-05-25 20:54:07
+10          1           1           1        1 2024-05-25 20:57:47
+11          1           1           1        1 2024-05-25 21:01:37
+12          1           1           1        1 2024-05-25 21:05:26
+13          1           1           1        1 2024-05-25 21:09:07
+14          1           1           1        1 2024-05-25 21:12:31
+15          1           1           1        1 2024-05-25 21:17:10
+16          1           1           1        1 2024-05-25 21:21:28
+17          1           1           1        1 2024-05-25 21:25:48
+18          1           1           1        1 2024-05-25 21:29:51
+19          1           1           1        1 2024-05-25 21:33:26
+20          1           1           1        1 2024-05-25 21:37:50
+21          1           1           1        1 2024-05-25 21:41:17
+22          1           1           1        1 2024-05-25 21:46:15
+23          1           1           1        1 2024-05-25 21:49:36
+24          1           1           1        1 2024-05-25 21:53:23
+25          1           1           1        1 2024-05-25 21:56:44
+26          1           1           1        1 2024-05-25 22:00:52
+27          1           1           1        1 2024-05-25 22:04:02
+28          1           1           1        1 2024-05-25 22:08:50
+29          1           1           1        1 2024-05-25 22:11:39
+30          1           1           1        1 2024-05-25 22:15:43
+31          1           1           1        1 2024-05-25 22:19:16
+32          1           1           1        1 2024-05-25 22:24:18
+33          1           1           1        1 2024-05-25 22:37:14
+34          1           1           1        1 2024-05-25 22:42:13
+35          1           1           1        1 2024-05-25 22:45:44
+36          1           1           1        1 2024-05-25 22:50:13
+37          1           1           1        1 2024-05-25 22:53:41
+38          1           1           1        1 2024-05-25 22:58:36
+39          1           1           1        1 2024-05-25 23:03:37
+40          1           1           1        1 2024-05-25 23:06:08
+41          1           1           1        1 2024-05-25 23:07:39
+42          1           1           1        1 2024-05-25 23:09:14
+43          1           1           1        1 2024-05-25 23:12:58
+44          1           1           1        1 2024-05-25 23:15:24
+45          1           1           1        1 2024-05-25 23:20:26
+46          1           1           1        1 2024-05-25 23:25:52
+47          1           1           1        1 2024-05-25 23:30:29
+48          1           1           1        1 2024-05-25 23:37:02
+49          1           1           1        1 2024-05-25 23:40:42
+[2024-05-25T16:46:37.478+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:37.500+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:37.499+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:46:37.519+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:37.518+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:46:37.536+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.834 seconds
+[2024-05-25T16:46:55.727+0000] {processor.py:161} INFO - Started process (PID=165) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:55.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:46:55.732+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:55.731+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:56.555+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:21:58
+1           1           1           1        1 2024-05-25 20:25:54
+2           1           1           1        1 2024-05-25 20:29:44
+3           1           1           1        1 2024-05-25 20:33:30
+4           1           1           1        1 2024-05-25 20:36:59
+5           1           1           1        1 2024-05-25 20:40:58
+6           1           1           1        1 2024-05-25 20:45:29
+7           1           1           1        1 2024-05-25 20:50:01
+8           1           1           1        1 2024-05-25 20:54:07
+9           1           1           1        1 2024-05-25 20:57:47
+10          1           1           1        1 2024-05-25 21:01:37
+11          1           1           1        1 2024-05-25 21:05:26
+12          1           1           1        1 2024-05-25 21:09:07
+13          1           1           1        1 2024-05-25 21:12:31
+14          1           1           1        1 2024-05-25 21:17:10
+15          1           1           1        1 2024-05-25 21:21:28
+16          1           1           1        1 2024-05-25 21:25:48
+17          1           1           1        1 2024-05-25 21:29:51
+18          1           1           1        1 2024-05-25 21:33:26
+19          1           1           1        1 2024-05-25 21:37:50
+20          1           1           1        1 2024-05-25 21:41:17
+21          1           1           1        1 2024-05-25 21:46:15
+22          1           1           1        1 2024-05-25 21:49:36
+23          1           1           1        1 2024-05-25 21:53:23
+24          1           1           1        1 2024-05-25 21:56:44
+25          1           1           1        1 2024-05-25 22:00:52
+26          1           1           1        1 2024-05-25 22:04:02
+27          1           1           1        1 2024-05-25 22:08:50
+28          1           1           1        1 2024-05-25 22:11:39
+29          1           1           1        1 2024-05-25 22:15:43
+30          1           1           1        1 2024-05-25 22:19:16
+31          1           1           1        1 2024-05-25 22:24:18
+32          1           1           1        1 2024-05-25 22:37:14
+33          1           1           1        1 2024-05-25 22:42:13
+34          1           1           1        1 2024-05-25 22:45:44
+35          1           1           1        1 2024-05-25 22:50:13
+36          1           1           1        1 2024-05-25 22:53:41
+37          1           1           1        1 2024-05-25 22:58:36
+38          1           1           1        1 2024-05-25 23:03:37
+39          1           1           1        1 2024-05-25 23:06:08
+40          1           1           1        1 2024-05-25 23:07:39
+41          1           1           1        1 2024-05-25 23:09:14
+42          1           1           1        1 2024-05-25 23:12:58
+43          1           1           1        1 2024-05-25 23:15:24
+44          1           1           1        1 2024-05-25 23:20:26
+45          1           1           1        1 2024-05-25 23:25:52
+46          1           1           1        1 2024-05-25 23:30:29
+47          1           1           1        1 2024-05-25 23:37:02
+48          1           1           1        1 2024-05-25 23:40:42
+49          1           1           1        1 2024-05-25 23:46:01
+[2024-05-25T16:46:56.563+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:46:56.653+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:56.652+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:46:56.669+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:46:56.669+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:46:56.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.979 seconds
+[2024-05-25T16:47:26.923+0000] {processor.py:161} INFO - Started process (PID=173) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:47:26.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:47:26.928+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:47:26.927+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:47:28.063+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:21:58
+1           1           1           1        1 2024-05-25 20:25:54
+2           1           1           1        1 2024-05-25 20:29:44
+3           1           1           1        1 2024-05-25 20:33:30
+4           1           1           1        1 2024-05-25 20:36:59
+5           1           1           1        1 2024-05-25 20:40:58
+6           1           1           1        1 2024-05-25 20:45:29
+7           1           1           1        1 2024-05-25 20:50:01
+8           1           1           1        1 2024-05-25 20:54:07
+9           1           1           1        1 2024-05-25 20:57:47
+10          1           1           1        1 2024-05-25 21:01:37
+11          1           1           1        1 2024-05-25 21:05:26
+12          1           1           1        1 2024-05-25 21:09:07
+13          1           1           1        1 2024-05-25 21:12:31
+14          1           1           1        1 2024-05-25 21:17:10
+15          1           1           1        1 2024-05-25 21:21:28
+16          1           1           1        1 2024-05-25 21:25:48
+17          1           1           1        1 2024-05-25 21:29:51
+18          1           1           1        1 2024-05-25 21:33:26
+19          1           1           1        1 2024-05-25 21:37:50
+20          1           1           1        1 2024-05-25 21:41:17
+21          1           1           1        1 2024-05-25 21:46:15
+22          1           1           1        1 2024-05-25 21:49:36
+23          1           1           1        1 2024-05-25 21:53:23
+24          1           1           1        1 2024-05-25 21:56:44
+25          1           1           1        1 2024-05-25 22:00:52
+26          1           1           1        1 2024-05-25 22:04:02
+27          1           1           1        1 2024-05-25 22:08:50
+28          1           1           1        1 2024-05-25 22:11:39
+29          1           1           1        1 2024-05-25 22:15:43
+30          1           1           1        1 2024-05-25 22:19:16
+31          1           1           1        1 2024-05-25 22:24:18
+32          1           1           1        1 2024-05-25 22:37:14
+33          1           1           1        1 2024-05-25 22:42:13
+34          1           1           1        1 2024-05-25 22:45:44
+35          1           1           1        1 2024-05-25 22:50:13
+36          1           1           1        1 2024-05-25 22:53:41
+37          1           1           1        1 2024-05-25 22:58:36
+38          1           1           1        1 2024-05-25 23:03:37
+39          1           1           1        1 2024-05-25 23:06:08
+40          1           1           1        1 2024-05-25 23:07:39
+41          1           1           1        1 2024-05-25 23:09:14
+42          1           1           1        1 2024-05-25 23:12:58
+43          1           1           1        1 2024-05-25 23:15:24
+44          1           1           1        1 2024-05-25 23:20:26
+45          1           1           1        1 2024-05-25 23:25:52
+46          1           1           1        1 2024-05-25 23:30:29
+47          1           1           1        1 2024-05-25 23:37:02
+48          1           1           1        1 2024-05-25 23:40:42
+49          1           1           1        1 2024-05-25 23:46:01
+[2024-05-25T16:47:28.068+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:47:28.097+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:47:28.097+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:47:28.121+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:47:28.120+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:47:28.139+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.237 seconds
+[2024-05-25T16:47:43.014+0000] {processor.py:161} INFO - Started process (PID=181) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:47:43.015+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:47:43.017+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:47:43.017+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:47:43.775+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:25:54
+1           1           1           1        1 2024-05-25 20:29:44
+2           1           1           1        1 2024-05-25 20:33:30
+3           1           1           1        1 2024-05-25 20:36:59
+4           1           1           1        1 2024-05-25 20:40:58
+5           1           1           1        1 2024-05-25 20:45:29
+6           1           1           1        1 2024-05-25 20:50:01
+7           1           1           1        1 2024-05-25 20:54:07
+8           1           1           1        1 2024-05-25 20:57:47
+9           1           1           1        1 2024-05-25 21:01:37
+10          1           1           1        1 2024-05-25 21:05:26
+11          1           1           1        1 2024-05-25 21:09:07
+12          1           1           1        1 2024-05-25 21:12:31
+13          1           1           1        1 2024-05-25 21:17:10
+14          1           1           1        1 2024-05-25 21:21:28
+15          1           1           1        1 2024-05-25 21:25:48
+16          1           1           1        1 2024-05-25 21:29:51
+17          1           1           1        1 2024-05-25 21:33:26
+18          1           1           1        1 2024-05-25 21:37:50
+19          1           1           1        1 2024-05-25 21:41:17
+20          1           1           1        1 2024-05-25 21:46:15
+21          1           1           1        1 2024-05-25 21:49:36
+22          1           1           1        1 2024-05-25 21:53:23
+23          1           1           1        1 2024-05-25 21:56:44
+24          1           1           1        1 2024-05-25 22:00:52
+25          1           1           1        1 2024-05-25 22:04:02
+26          1           1           1        1 2024-05-25 22:08:50
+27          1           1           1        1 2024-05-25 22:11:39
+28          1           1           1        1 2024-05-25 22:15:43
+29          1           1           1        1 2024-05-25 22:19:16
+30          1           1           1        1 2024-05-25 22:24:18
+31          1           1           1        1 2024-05-25 22:37:14
+32          1           1           1        1 2024-05-25 22:42:13
+33          1           1           1        1 2024-05-25 22:45:44
+34          1           1           1        1 2024-05-25 22:50:13
+35          1           1           1        1 2024-05-25 22:53:41
+36          1           1           1        1 2024-05-25 22:58:36
+37          1           1           1        1 2024-05-25 23:03:37
+38          1           1           1        1 2024-05-25 23:06:08
+39          1           1           1        1 2024-05-25 23:07:39
+40          1           1           1        1 2024-05-25 23:09:14
+41          1           1           1        1 2024-05-25 23:12:58
+42          1           1           1        1 2024-05-25 23:15:24
+43          1           1           1        1 2024-05-25 23:20:26
+44          1           1           1        1 2024-05-25 23:25:52
+45          1           1           1        1 2024-05-25 23:30:29
+46          1           1           1        1 2024-05-25 23:37:02
+47          1           1           1        1 2024-05-25 23:40:42
+48          1           1           1        1 2024-05-25 23:46:01
+49          1           1           1        1 2024-05-25 23:47:31
+[2024-05-25T16:47:43.782+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:47:43.804+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:47:43.803+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:47:43.822+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:47:43.822+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:47:43.845+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.836 seconds
+[2024-05-25T16:48:14.050+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:48:14.051+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:48:14.055+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:48:14.054+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:48:15.037+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:25:54
+1           1           1           1        1 2024-05-25 20:29:44
+2           1           1           1        1 2024-05-25 20:33:30
+3           1           1           1        1 2024-05-25 20:36:59
+4           1           1           1        1 2024-05-25 20:40:58
+5           1           1           1        1 2024-05-25 20:45:29
+6           1           1           1        1 2024-05-25 20:50:01
+7           1           1           1        1 2024-05-25 20:54:07
+8           1           1           1        1 2024-05-25 20:57:47
+9           1           1           1        1 2024-05-25 21:01:37
+10          1           1           1        1 2024-05-25 21:05:26
+11          1           1           1        1 2024-05-25 21:09:07
+12          1           1           1        1 2024-05-25 21:12:31
+13          1           1           1        1 2024-05-25 21:17:10
+14          1           1           1        1 2024-05-25 21:21:28
+15          1           1           1        1 2024-05-25 21:25:48
+16          1           1           1        1 2024-05-25 21:29:51
+17          1           1           1        1 2024-05-25 21:33:26
+18          1           1           1        1 2024-05-25 21:37:50
+19          1           1           1        1 2024-05-25 21:41:17
+20          1           1           1        1 2024-05-25 21:46:15
+21          1           1           1        1 2024-05-25 21:49:36
+22          1           1           1        1 2024-05-25 21:53:23
+23          1           1           1        1 2024-05-25 21:56:44
+24          1           1           1        1 2024-05-25 22:00:52
+25          1           1           1        1 2024-05-25 22:04:02
+26          1           1           1        1 2024-05-25 22:08:50
+27          1           1           1        1 2024-05-25 22:11:39
+28          1           1           1        1 2024-05-25 22:15:43
+29          1           1           1        1 2024-05-25 22:19:16
+30          1           1           1        1 2024-05-25 22:24:18
+31          1           1           1        1 2024-05-25 22:37:14
+32          1           1           1        1 2024-05-25 22:42:13
+33          1           1           1        1 2024-05-25 22:45:44
+34          1           1           1        1 2024-05-25 22:50:13
+35          1           1           1        1 2024-05-25 22:53:41
+36          1           1           1        1 2024-05-25 22:58:36
+37          1           1           1        1 2024-05-25 23:03:37
+38          1           1           1        1 2024-05-25 23:06:08
+39          1           1           1        1 2024-05-25 23:07:39
+40          1           1           1        1 2024-05-25 23:09:14
+41          1           1           1        1 2024-05-25 23:12:58
+42          1           1           1        1 2024-05-25 23:15:24
+43          1           1           1        1 2024-05-25 23:20:26
+44          1           1           1        1 2024-05-25 23:25:52
+45          1           1           1        1 2024-05-25 23:30:29
+46          1           1           1        1 2024-05-25 23:37:02
+47          1           1           1        1 2024-05-25 23:40:42
+48          1           1           1        1 2024-05-25 23:46:01
+49          1           1           1        1 2024-05-25 23:47:31
+[2024-05-25T16:48:15.046+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:48:15.067+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:48:15.066+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:48:15.082+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:48:15.082+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:48:15.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.060 seconds
+[2024-05-25T16:48:45.215+0000] {processor.py:161} INFO - Started process (PID=197) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:48:45.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:48:45.218+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:48:45.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:48:45.969+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:25:54
+1           1           1           1        1 2024-05-25 20:29:44
+2           1           1           1        1 2024-05-25 20:33:30
+3           1           1           1        1 2024-05-25 20:36:59
+4           1           1           1        1 2024-05-25 20:40:58
+5           1           1           1        1 2024-05-25 20:45:29
+6           1           1           1        1 2024-05-25 20:50:01
+7           1           1           1        1 2024-05-25 20:54:07
+8           1           1           1        1 2024-05-25 20:57:47
+9           1           1           1        1 2024-05-25 21:01:37
+10          1           1           1        1 2024-05-25 21:05:26
+11          1           1           1        1 2024-05-25 21:09:07
+12          1           1           1        1 2024-05-25 21:12:31
+13          1           1           1        1 2024-05-25 21:17:10
+14          1           1           1        1 2024-05-25 21:21:28
+15          1           1           1        1 2024-05-25 21:25:48
+16          1           1           1        1 2024-05-25 21:29:51
+17          1           1           1        1 2024-05-25 21:33:26
+18          1           1           1        1 2024-05-25 21:37:50
+19          1           1           1        1 2024-05-25 21:41:17
+20          1           1           1        1 2024-05-25 21:46:15
+21          1           1           1        1 2024-05-25 21:49:36
+22          1           1           1        1 2024-05-25 21:53:23
+23          1           1           1        1 2024-05-25 21:56:44
+24          1           1           1        1 2024-05-25 22:00:52
+25          1           1           1        1 2024-05-25 22:04:02
+26          1           1           1        1 2024-05-25 22:08:50
+27          1           1           1        1 2024-05-25 22:11:39
+28          1           1           1        1 2024-05-25 22:15:43
+29          1           1           1        1 2024-05-25 22:19:16
+30          1           1           1        1 2024-05-25 22:24:18
+31          1           1           1        1 2024-05-25 22:37:14
+32          1           1           1        1 2024-05-25 22:42:13
+33          1           1           1        1 2024-05-25 22:45:44
+34          1           1           1        1 2024-05-25 22:50:13
+35          1           1           1        1 2024-05-25 22:53:41
+36          1           1           1        1 2024-05-25 22:58:36
+37          1           1           1        1 2024-05-25 23:03:37
+38          1           1           1        1 2024-05-25 23:06:08
+39          1           1           1        1 2024-05-25 23:07:39
+40          1           1           1        1 2024-05-25 23:09:14
+41          1           1           1        1 2024-05-25 23:12:58
+42          1           1           1        1 2024-05-25 23:15:24
+43          1           1           1        1 2024-05-25 23:20:26
+44          1           1           1        1 2024-05-25 23:25:52
+45          1           1           1        1 2024-05-25 23:30:29
+46          1           1           1        1 2024-05-25 23:37:02
+47          1           1           1        1 2024-05-25 23:40:42
+48          1           1           1        1 2024-05-25 23:46:01
+49          1           1           1        1 2024-05-25 23:47:31
+[2024-05-25T16:48:45.974+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:48:45.993+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:48:45.992+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:48:46.009+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:48:46.009+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:48:46.033+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.823 seconds
+[2024-05-25T16:49:16.253+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:49:16.254+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:49:16.256+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:49:16.256+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:49:17.030+0000] {logging_mixin.py:188} INFO -     song_name  artis_name  album_name  release           played_at
+0           1           1           1        1 2024-05-25 20:25:54
+1           1           1           1        1 2024-05-25 20:29:44
+2           1           1           1        1 2024-05-25 20:33:30
+3           1           1           1        1 2024-05-25 20:36:59
+4           1           1           1        1 2024-05-25 20:40:58
+5           1           1           1        1 2024-05-25 20:45:29
+6           1           1           1        1 2024-05-25 20:50:01
+7           1           1           1        1 2024-05-25 20:54:07
+8           1           1           1        1 2024-05-25 20:57:47
+9           1           1           1        1 2024-05-25 21:01:37
+10          1           1           1        1 2024-05-25 21:05:26
+11          1           1           1        1 2024-05-25 21:09:07
+12          1           1           1        1 2024-05-25 21:12:31
+13          1           1           1        1 2024-05-25 21:17:10
+14          1           1           1        1 2024-05-25 21:21:28
+15          1           1           1        1 2024-05-25 21:25:48
+16          1           1           1        1 2024-05-25 21:29:51
+17          1           1           1        1 2024-05-25 21:33:26
+18          1           1           1        1 2024-05-25 21:37:50
+19          1           1           1        1 2024-05-25 21:41:17
+20          1           1           1        1 2024-05-25 21:46:15
+21          1           1           1        1 2024-05-25 21:49:36
+22          1           1           1        1 2024-05-25 21:53:23
+23          1           1           1        1 2024-05-25 21:56:44
+24          1           1           1        1 2024-05-25 22:00:52
+25          1           1           1        1 2024-05-25 22:04:02
+26          1           1           1        1 2024-05-25 22:08:50
+27          1           1           1        1 2024-05-25 22:11:39
+28          1           1           1        1 2024-05-25 22:15:43
+29          1           1           1        1 2024-05-25 22:19:16
+30          1           1           1        1 2024-05-25 22:24:18
+31          1           1           1        1 2024-05-25 22:37:14
+32          1           1           1        1 2024-05-25 22:42:13
+33          1           1           1        1 2024-05-25 22:45:44
+34          1           1           1        1 2024-05-25 22:50:13
+35          1           1           1        1 2024-05-25 22:53:41
+36          1           1           1        1 2024-05-25 22:58:36
+37          1           1           1        1 2024-05-25 23:03:37
+38          1           1           1        1 2024-05-25 23:06:08
+39          1           1           1        1 2024-05-25 23:07:39
+40          1           1           1        1 2024-05-25 23:09:14
+41          1           1           1        1 2024-05-25 23:12:58
+42          1           1           1        1 2024-05-25 23:15:24
+43          1           1           1        1 2024-05-25 23:20:26
+44          1           1           1        1 2024-05-25 23:25:52
+45          1           1           1        1 2024-05-25 23:30:29
+46          1           1           1        1 2024-05-25 23:37:02
+47          1           1           1        1 2024-05-25 23:40:42
+48          1           1           1        1 2024-05-25 23:46:01
+49          1           1           1        1 2024-05-25 23:47:31
+[2024-05-25T16:49:17.036+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:49:17.054+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:49:17.053+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:49:17.071+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:49:17.071+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:49:17.089+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.840 seconds
+[2024-05-25T16:49:44.275+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:49:44.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:49:44.281+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:49:44.280+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:49:45.066+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:49:45.089+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:49:45.088+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:49:45.105+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:49:45.105+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:49:45.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.861 seconds
+[2024-05-25T16:50:15.399+0000] {processor.py:161} INFO - Started process (PID=221) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:50:15.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:50:15.408+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:50:15.408+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:50:16.339+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:50:16.366+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:50:16.366+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:50:16.386+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:50:16.386+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:50:16.402+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.018 seconds
+[2024-05-25T16:50:46.618+0000] {processor.py:161} INFO - Started process (PID=229) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:50:46.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:50:46.637+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:50:46.634+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:50:48.087+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+1                                          departure!  ... 2024-05-25 23:46:01
+2                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+3                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+4                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+5                                 Good Morning World!  ... 2024-05-25 23:25:52
+6                                        OVER THE TOP  ... 2024-05-25 23:20:26
+7                                departure! - TV Size  ... 2024-05-25 23:15:24
+8            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+9                        Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+10            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+11                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+12    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+13        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+14                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+15                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+16  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+17                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+18  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+19                                     Because of you  ... 2024-05-25 22:24:18
+20                                             Heaven  ... 2024-05-25 22:19:16
+21                                           Only You  ... 2024-05-25 22:15:43
+22                                              SPOT!  ... 2024-05-25 22:11:39
+23                                           The Boys  ... 2024-05-25 22:08:50
+24                                          Energetic  ... 2024-05-25 22:04:02
+25                                               Hush  ... 2024-05-25 22:00:52
+26                                          Something  ... 2024-05-25 21:56:44
+27                                        Don't Leave  ... 2024-05-25 21:53:23
+28                                      Give it to me  ... 2024-05-25 21:49:36
+29                                             NoNoNo  ... 2024-05-25 21:46:15
+30                                              Alone  ... 2024-05-25 21:41:17
+31                                         Lion Heart  ... 2024-05-25 21:37:50
+32                                            Mr. Chu  ... 2024-05-25 21:33:26
+33                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+34                                               보여줄게  ... 2024-05-25 21:25:48
+35                                          Haru Haru  ... 2024-05-25 21:21:28
+36                                                Gee  ... 2024-05-25 21:17:10
+37                                               STEP  ... 2024-05-25 21:12:31
+38                                          Up & Down  ... 2024-05-25 21:09:07
+39                                              Genie  ... 2024-05-25 21:05:26
+40                                                Mr.  ... 2024-05-25 21:01:37
+41                                            Go Away  ... 2024-05-25 20:57:47
+42                                          Roly-Poly  ... 2024-05-25 20:54:07
+43                                        I GOT A BOY  ... 2024-05-25 20:50:01
+44                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+45                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+46                                      I Am The Best  ... 2024-05-25 20:36:59
+47                                               FIRE  ... 2024-05-25 20:33:30
+48                                     COME BACK HOME  ... 2024-05-25 20:29:44
+49                                               Lies  ... 2024-05-25 20:25:54
+
+[50 rows x 5 columns]
+[2024-05-25T16:50:48.095+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:50:48.119+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:50:48.118+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:50:48.136+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:50:48.136+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:50:48.153+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.567 seconds
+[2024-05-25T16:51:18.324+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:51:18.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:51:18.327+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:51:18.327+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:51:19.287+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+1                                          departure!  ... 2024-05-25 23:46:01
+2                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+3                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+4                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+5                                 Good Morning World!  ... 2024-05-25 23:25:52
+6                                        OVER THE TOP  ... 2024-05-25 23:20:26
+7                                departure! - TV Size  ... 2024-05-25 23:15:24
+8            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+9                        Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+10            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+11                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+12    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+13        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+14                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+15                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+16  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+17                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+18  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+19                                     Because of you  ... 2024-05-25 22:24:18
+20                                             Heaven  ... 2024-05-25 22:19:16
+21                                           Only You  ... 2024-05-25 22:15:43
+22                                              SPOT!  ... 2024-05-25 22:11:39
+23                                           The Boys  ... 2024-05-25 22:08:50
+24                                          Energetic  ... 2024-05-25 22:04:02
+25                                               Hush  ... 2024-05-25 22:00:52
+26                                          Something  ... 2024-05-25 21:56:44
+27                                        Don't Leave  ... 2024-05-25 21:53:23
+28                                      Give it to me  ... 2024-05-25 21:49:36
+29                                             NoNoNo  ... 2024-05-25 21:46:15
+30                                              Alone  ... 2024-05-25 21:41:17
+31                                         Lion Heart  ... 2024-05-25 21:37:50
+32                                            Mr. Chu  ... 2024-05-25 21:33:26
+33                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+34                                               보여줄게  ... 2024-05-25 21:25:48
+35                                          Haru Haru  ... 2024-05-25 21:21:28
+36                                                Gee  ... 2024-05-25 21:17:10
+37                                               STEP  ... 2024-05-25 21:12:31
+38                                          Up & Down  ... 2024-05-25 21:09:07
+39                                              Genie  ... 2024-05-25 21:05:26
+40                                                Mr.  ... 2024-05-25 21:01:37
+41                                            Go Away  ... 2024-05-25 20:57:47
+42                                          Roly-Poly  ... 2024-05-25 20:54:07
+43                                        I GOT A BOY  ... 2024-05-25 20:50:01
+44                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+45                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+46                                      I Am The Best  ... 2024-05-25 20:36:59
+47                                               FIRE  ... 2024-05-25 20:33:30
+48                                     COME BACK HOME  ... 2024-05-25 20:29:44
+49                                               Lies  ... 2024-05-25 20:25:54
+
+[50 rows x 5 columns]
+[2024-05-25T16:51:19.293+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:51:19.313+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:51:19.313+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:51:19.329+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:51:19.328+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:51:19.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.024 seconds
+[2024-05-25T16:51:49.496+0000] {processor.py:161} INFO - Started process (PID=245) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:51:49.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:51:49.499+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:51:49.499+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:51:50.278+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+1                                          departure!  ... 2024-05-25 23:46:01
+2                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+3                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+4                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+5                                 Good Morning World!  ... 2024-05-25 23:25:52
+6                                        OVER THE TOP  ... 2024-05-25 23:20:26
+7                                departure! - TV Size  ... 2024-05-25 23:15:24
+8            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+9                        Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+10            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+11                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+12    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+13        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+14                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+15                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+16  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+17                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+18  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+19                                     Because of you  ... 2024-05-25 22:24:18
+20                                             Heaven  ... 2024-05-25 22:19:16
+21                                           Only You  ... 2024-05-25 22:15:43
+22                                              SPOT!  ... 2024-05-25 22:11:39
+23                                           The Boys  ... 2024-05-25 22:08:50
+24                                          Energetic  ... 2024-05-25 22:04:02
+25                                               Hush  ... 2024-05-25 22:00:52
+26                                          Something  ... 2024-05-25 21:56:44
+27                                        Don't Leave  ... 2024-05-25 21:53:23
+28                                      Give it to me  ... 2024-05-25 21:49:36
+29                                             NoNoNo  ... 2024-05-25 21:46:15
+30                                              Alone  ... 2024-05-25 21:41:17
+31                                         Lion Heart  ... 2024-05-25 21:37:50
+32                                            Mr. Chu  ... 2024-05-25 21:33:26
+33                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+34                                               보여줄게  ... 2024-05-25 21:25:48
+35                                          Haru Haru  ... 2024-05-25 21:21:28
+36                                                Gee  ... 2024-05-25 21:17:10
+37                                               STEP  ... 2024-05-25 21:12:31
+38                                          Up & Down  ... 2024-05-25 21:09:07
+39                                              Genie  ... 2024-05-25 21:05:26
+40                                                Mr.  ... 2024-05-25 21:01:37
+41                                            Go Away  ... 2024-05-25 20:57:47
+42                                          Roly-Poly  ... 2024-05-25 20:54:07
+43                                        I GOT A BOY  ... 2024-05-25 20:50:01
+44                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+45                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+46                                      I Am The Best  ... 2024-05-25 20:36:59
+47                                               FIRE  ... 2024-05-25 20:33:30
+48                                     COME BACK HOME  ... 2024-05-25 20:29:44
+49                                               Lies  ... 2024-05-25 20:25:54
+
+[50 rows x 5 columns]
+[2024-05-25T16:51:50.284+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:51:50.301+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:51:50.301+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:51:50.315+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:51:50.315+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:51:50.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.838 seconds
+[2024-05-25T16:52:20.531+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:20.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:52:20.534+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:20.533+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:21.317+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:52:21.323+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:21.348+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:21.347+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:52:21.365+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:21.365+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:52:21.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.859 seconds
+[2024-05-25T16:52:23.442+0000] {processor.py:161} INFO - Started process (PID=255) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:23.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:52:23.445+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:23.444+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:24.263+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:52:24.269+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:24.291+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:24.290+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:52:24.308+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:24.308+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:52:24.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.891 seconds
+[2024-05-25T16:52:54.502+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:54.503+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:52:54.505+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:54.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:55.254+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:52:55.260+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:52:55.280+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:55.280+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:52:55.298+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:52:55.298+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:52:55.313+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.817 seconds
+[2024-05-25T16:53:25.481+0000] {processor.py:161} INFO - Started process (PID=271) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:53:25.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:53:25.484+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:53:25.484+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:53:26.469+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:53:26.476+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:53:26.495+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:53:26.494+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:53:26.511+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:53:26.511+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:53:26.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.049 seconds
+[2024-05-25T16:53:49.615+0000] {processor.py:161} INFO - Started process (PID=279) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:53:49.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:53:49.619+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:53:49.618+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:53:50.420+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:53:50.426+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:53:50.543+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:53:50.543+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:53:50.557+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:53:50.557+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:53:50.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.966 seconds
+[2024-05-25T16:54:20.837+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:54:20.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:54:20.847+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:54:20.846+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:54:22.029+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:54:22.036+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:54:22.061+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:54:22.061+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:54:22.082+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:54:22.082+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:54:22.096+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.277 seconds
+[2024-05-25T16:54:52.264+0000] {processor.py:161} INFO - Started process (PID=295) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:54:52.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:54:52.267+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:54:52.267+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:54:53.040+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:54:53.053+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:54:53.085+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:54:53.084+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:54:53.111+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:54:53.110+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:54:53.142+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.884 seconds
+[2024-05-25T16:55:23.311+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:55:23.312+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:55:23.314+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:55:23.314+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:55:24.066+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:55:24.072+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:55:24.090+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:55:24.090+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:55:24.105+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:55:24.105+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:55:24.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.816 seconds
+[2024-05-25T16:55:54.284+0000] {processor.py:161} INFO - Started process (PID=311) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:55:54.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:55:54.287+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:55:54.286+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:55:54.981+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:55:54.986+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:55:55.004+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:55:55.004+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:55:55.019+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:55:55.019+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:55:55.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.755 seconds
+[2024-05-25T16:56:25.214+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:56:25.215+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:56:25.217+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:56:25.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:56:26.069+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:56:26.077+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:56:26.100+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:56:26.099+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:56:26.118+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:56:26.117+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:56:26.137+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.928 seconds
+[2024-05-25T16:56:56.351+0000] {processor.py:161} INFO - Started process (PID=327) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:56:56.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:56:56.357+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:56:56.356+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:56:57.396+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:56:57.402+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:56:57.421+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:56:57.420+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:56:57.435+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:56:57.435+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:56:57.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.106 seconds
+[2024-05-25T16:57:27.525+0000] {processor.py:161} INFO - Started process (PID=335) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:57:27.526+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:57:27.529+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:57:27.528+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:57:28.383+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+1                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+2                                          departure!  ... 2024-05-25 23:46:01
+3                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+4                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+5                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+6                                 Good Morning World!  ... 2024-05-25 23:25:52
+7                                        OVER THE TOP  ... 2024-05-25 23:20:26
+8                                departure! - TV Size  ... 2024-05-25 23:15:24
+9            Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+10                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+11            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+12                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+13    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+14        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+15                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+16                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+17  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+18                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+19  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+20                                     Because of you  ... 2024-05-25 22:24:18
+21                                             Heaven  ... 2024-05-25 22:19:16
+22                                           Only You  ... 2024-05-25 22:15:43
+23                                              SPOT!  ... 2024-05-25 22:11:39
+24                                           The Boys  ... 2024-05-25 22:08:50
+25                                          Energetic  ... 2024-05-25 22:04:02
+26                                               Hush  ... 2024-05-25 22:00:52
+27                                          Something  ... 2024-05-25 21:56:44
+28                                        Don't Leave  ... 2024-05-25 21:53:23
+29                                      Give it to me  ... 2024-05-25 21:49:36
+30                                             NoNoNo  ... 2024-05-25 21:46:15
+31                                              Alone  ... 2024-05-25 21:41:17
+32                                         Lion Heart  ... 2024-05-25 21:37:50
+33                                            Mr. Chu  ... 2024-05-25 21:33:26
+34                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+35                                               보여줄게  ... 2024-05-25 21:25:48
+36                                          Haru Haru  ... 2024-05-25 21:21:28
+37                                                Gee  ... 2024-05-25 21:17:10
+38                                               STEP  ... 2024-05-25 21:12:31
+39                                          Up & Down  ... 2024-05-25 21:09:07
+40                                              Genie  ... 2024-05-25 21:05:26
+41                                                Mr.  ... 2024-05-25 21:01:37
+42                                            Go Away  ... 2024-05-25 20:57:47
+43                                          Roly-Poly  ... 2024-05-25 20:54:07
+44                                        I GOT A BOY  ... 2024-05-25 20:50:01
+45                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+46                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+47                                      I Am The Best  ... 2024-05-25 20:36:59
+48                                               FIRE  ... 2024-05-25 20:33:30
+49                                     COME BACK HOME  ... 2024-05-25 20:29:44
+
+[50 rows x 5 columns]
+[2024-05-25T16:57:28.391+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:57:28.418+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:57:28.417+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:57:28.439+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:57:28.438+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:57:28.457+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.941 seconds
+[2024-05-25T16:57:58.649+0000] {processor.py:161} INFO - Started process (PID=343) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:57:58.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:57:58.652+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:57:58.652+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:57:59.513+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                                  ウィーアー! (ONE PIECE)  ... 2024-05-25 23:57:18
+1                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+2                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+3                                          departure!  ... 2024-05-25 23:46:01
+4                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+5                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+6                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+7                                 Good Morning World!  ... 2024-05-25 23:25:52
+8                                        OVER THE TOP  ... 2024-05-25 23:20:26
+9                                departure! - TV Size  ... 2024-05-25 23:15:24
+10           Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+11                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+12            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+13                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+14    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+15        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+16                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+17                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+18  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+19                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+20  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+21                                     Because of you  ... 2024-05-25 22:24:18
+22                                             Heaven  ... 2024-05-25 22:19:16
+23                                           Only You  ... 2024-05-25 22:15:43
+24                                              SPOT!  ... 2024-05-25 22:11:39
+25                                           The Boys  ... 2024-05-25 22:08:50
+26                                          Energetic  ... 2024-05-25 22:04:02
+27                                               Hush  ... 2024-05-25 22:00:52
+28                                          Something  ... 2024-05-25 21:56:44
+29                                        Don't Leave  ... 2024-05-25 21:53:23
+30                                      Give it to me  ... 2024-05-25 21:49:36
+31                                             NoNoNo  ... 2024-05-25 21:46:15
+32                                              Alone  ... 2024-05-25 21:41:17
+33                                         Lion Heart  ... 2024-05-25 21:37:50
+34                                            Mr. Chu  ... 2024-05-25 21:33:26
+35                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+36                                               보여줄게  ... 2024-05-25 21:25:48
+37                                          Haru Haru  ... 2024-05-25 21:21:28
+38                                                Gee  ... 2024-05-25 21:17:10
+39                                               STEP  ... 2024-05-25 21:12:31
+40                                          Up & Down  ... 2024-05-25 21:09:07
+41                                              Genie  ... 2024-05-25 21:05:26
+42                                                Mr.  ... 2024-05-25 21:01:37
+43                                            Go Away  ... 2024-05-25 20:57:47
+44                                          Roly-Poly  ... 2024-05-25 20:54:07
+45                                        I GOT A BOY  ... 2024-05-25 20:50:01
+46                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+47                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+48                                      I Am The Best  ... 2024-05-25 20:36:59
+49                                               FIRE  ... 2024-05-25 20:33:30
+
+[50 rows x 5 columns]
+[2024-05-25T16:57:59.524+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:57:59.549+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:57:59.549+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:57:59.574+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:57:59.573+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:57:59.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.948 seconds
+[2024-05-25T16:58:29.785+0000] {processor.py:161} INFO - Started process (PID=351) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:58:29.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:58:29.788+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:58:29.788+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:58:30.524+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                                  ウィーアー! (ONE PIECE)  ... 2024-05-25 23:57:18
+1                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+2                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+3                                          departure!  ... 2024-05-25 23:46:01
+4                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+5                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+6                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+7                                 Good Morning World!  ... 2024-05-25 23:25:52
+8                                        OVER THE TOP  ... 2024-05-25 23:20:26
+9                                departure! - TV Size  ... 2024-05-25 23:15:24
+10           Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+11                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+12            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+13                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+14    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+15        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+16                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+17                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+18  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+19                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+20  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+21                                     Because of you  ... 2024-05-25 22:24:18
+22                                             Heaven  ... 2024-05-25 22:19:16
+23                                           Only You  ... 2024-05-25 22:15:43
+24                                              SPOT!  ... 2024-05-25 22:11:39
+25                                           The Boys  ... 2024-05-25 22:08:50
+26                                          Energetic  ... 2024-05-25 22:04:02
+27                                               Hush  ... 2024-05-25 22:00:52
+28                                          Something  ... 2024-05-25 21:56:44
+29                                        Don't Leave  ... 2024-05-25 21:53:23
+30                                      Give it to me  ... 2024-05-25 21:49:36
+31                                             NoNoNo  ... 2024-05-25 21:46:15
+32                                              Alone  ... 2024-05-25 21:41:17
+33                                         Lion Heart  ... 2024-05-25 21:37:50
+34                                            Mr. Chu  ... 2024-05-25 21:33:26
+35                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+36                                               보여줄게  ... 2024-05-25 21:25:48
+37                                          Haru Haru  ... 2024-05-25 21:21:28
+38                                                Gee  ... 2024-05-25 21:17:10
+39                                               STEP  ... 2024-05-25 21:12:31
+40                                          Up & Down  ... 2024-05-25 21:09:07
+41                                              Genie  ... 2024-05-25 21:05:26
+42                                                Mr.  ... 2024-05-25 21:01:37
+43                                            Go Away  ... 2024-05-25 20:57:47
+44                                          Roly-Poly  ... 2024-05-25 20:54:07
+45                                        I GOT A BOY  ... 2024-05-25 20:50:01
+46                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+47                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+48                                      I Am The Best  ... 2024-05-25 20:36:59
+49                                               FIRE  ... 2024-05-25 20:33:30
+
+[50 rows x 5 columns]
+[2024-05-25T16:58:30.530+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:58:30.550+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:58:30.550+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:58:30.571+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:58:30.571+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:58:30.589+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 0.809 seconds
+[2024-05-25T16:59:00.814+0000] {processor.py:161} INFO - Started process (PID=359) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:59:00.818+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:59:00.820+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:59:00.819+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:59:02.160+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                                  ウィーアー! (ONE PIECE)  ... 2024-05-25 23:57:18
+1                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+2                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+3                                          departure!  ... 2024-05-25 23:46:01
+4                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+5                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+6                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+7                                 Good Morning World!  ... 2024-05-25 23:25:52
+8                                        OVER THE TOP  ... 2024-05-25 23:20:26
+9                                departure! - TV Size  ... 2024-05-25 23:15:24
+10           Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+11                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+12            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+13                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+14    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+15        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+16                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+17                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+18  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+19                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+20  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+21                                     Because of you  ... 2024-05-25 22:24:18
+22                                             Heaven  ... 2024-05-25 22:19:16
+23                                           Only You  ... 2024-05-25 22:15:43
+24                                              SPOT!  ... 2024-05-25 22:11:39
+25                                           The Boys  ... 2024-05-25 22:08:50
+26                                          Energetic  ... 2024-05-25 22:04:02
+27                                               Hush  ... 2024-05-25 22:00:52
+28                                          Something  ... 2024-05-25 21:56:44
+29                                        Don't Leave  ... 2024-05-25 21:53:23
+30                                      Give it to me  ... 2024-05-25 21:49:36
+31                                             NoNoNo  ... 2024-05-25 21:46:15
+32                                              Alone  ... 2024-05-25 21:41:17
+33                                         Lion Heart  ... 2024-05-25 21:37:50
+34                                            Mr. Chu  ... 2024-05-25 21:33:26
+35                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+36                                               보여줄게  ... 2024-05-25 21:25:48
+37                                          Haru Haru  ... 2024-05-25 21:21:28
+38                                                Gee  ... 2024-05-25 21:17:10
+39                                               STEP  ... 2024-05-25 21:12:31
+40                                          Up & Down  ... 2024-05-25 21:09:07
+41                                              Genie  ... 2024-05-25 21:05:26
+42                                                Mr.  ... 2024-05-25 21:01:37
+43                                            Go Away  ... 2024-05-25 20:57:47
+44                                          Roly-Poly  ... 2024-05-25 20:54:07
+45                                        I GOT A BOY  ... 2024-05-25 20:50:01
+46                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+47                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+48                                      I Am The Best  ... 2024-05-25 20:36:59
+49                                               FIRE  ... 2024-05-25 20:33:30
+
+[50 rows x 5 columns]
+[2024-05-25T16:59:02.170+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:59:02.213+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:59:02.212+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:59:02.244+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:59:02.244+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:59:02.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.456 seconds
+[2024-05-25T16:59:32.492+0000] {processor.py:161} INFO - Started process (PID=367) to work on /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:59:32.494+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/spotify_dag.py for tasks to queue
+[2024-05-25T16:59:32.513+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:59:32.509+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:59:34.070+0000] {logging_mixin.py:188} INFO -                                             song_name  ...           played_at
+0                                  ウィーアー! (ONE PIECE)  ... 2024-05-25 23:57:18
+1                     Fight Together (From ONE PIECE)  ... 2024-05-25 23:51:53
+2                                       紅蓮華 -TV ver.-  ... 2024-05-25 23:47:31
+3                                          departure!  ... 2024-05-25 23:46:01
+4                               Crazy Rainbow (ワンピース)  ... 2024-05-25 23:40:42
+5                                    Jiyuu no Tsubasa  ... 2024-05-25 23:37:02
+6                       Shoukei to Shikabane no Michi  ... 2024-05-25 23:30:29
+7                                 Good Morning World!  ... 2024-05-25 23:25:52
+8                                        OVER THE TOP  ... 2024-05-25 23:20:26
+9                                departure! - TV Size  ... 2024-05-25 23:15:24
+10           Netsujou No Spectrum (Nanatsu No Taizai)  ... 2024-05-25 23:12:58
+11                       Guren no Yumiya Tv Size Ver.  ... 2024-05-25 23:09:14
+12            Shoukei to Shikabane no Michi - Tv Size  ... 2024-05-25 23:07:39
+13                      Shinzo wo Sasageyo! - TV Size  ... 2024-05-25 23:06:08
+14    Love Dramatic (From "Kaguya-sama: Love is War")  ... 2024-05-25 23:03:37
+15        Kibou No Uta (Food Wars! Shokugeki No Soma)  ... 2024-05-25 22:58:36
+16                                     BINKUSUNO SAKE  ... 2024-05-25 22:53:41
+17                                 We Are (One Piece)  ... 2024-05-25 22:50:13
+18  Dan Dan Kokoro Hikareteku (From "Dragon Ball GT")  ... 2024-05-25 22:45:44
+19                    Polaris (Boku No Hero Academia)  ... 2024-05-25 22:42:13
+20  Braver (From "Angolmois: Record of Mongol Inva...  ... 2024-05-25 22:37:14
+21                                     Because of you  ... 2024-05-25 22:24:18
+22                                             Heaven  ... 2024-05-25 22:19:16
+23                                           Only You  ... 2024-05-25 22:15:43
+24                                              SPOT!  ... 2024-05-25 22:11:39
+25                                           The Boys  ... 2024-05-25 22:08:50
+26                                          Energetic  ... 2024-05-25 22:04:02
+27                                               Hush  ... 2024-05-25 22:00:52
+28                                          Something  ... 2024-05-25 21:56:44
+29                                        Don't Leave  ... 2024-05-25 21:53:23
+30                                      Give it to me  ... 2024-05-25 21:49:36
+31                                             NoNoNo  ... 2024-05-25 21:46:15
+32                                              Alone  ... 2024-05-25 21:41:17
+33                                         Lion Heart  ... 2024-05-25 21:37:50
+34                                            Mr. Chu  ... 2024-05-25 21:33:26
+35                             LET'S NOT FALL IN LOVE  ... 2024-05-25 21:29:51
+36                                               보여줄게  ... 2024-05-25 21:25:48
+37                                          Haru Haru  ... 2024-05-25 21:21:28
+38                                                Gee  ... 2024-05-25 21:17:10
+39                                               STEP  ... 2024-05-25 21:12:31
+40                                          Up & Down  ... 2024-05-25 21:09:07
+41                                              Genie  ... 2024-05-25 21:05:26
+42                                                Mr.  ... 2024-05-25 21:01:37
+43                                            Go Away  ... 2024-05-25 20:57:47
+44                                          Roly-Poly  ... 2024-05-25 20:54:07
+45                                        I GOT A BOY  ... 2024-05-25 20:50:01
+46                                 Bad Girl Good Girl  ... 2024-05-25 20:45:29
+47                               You and I (Park Bom)  ... 2024-05-25 20:40:58
+48                                      I Am The Best  ... 2024-05-25 20:36:59
+49                                               FIRE  ... 2024-05-25 20:33:30
+
+[50 rows x 5 columns]
+[2024-05-25T16:59:34.089+0000] {processor.py:840} INFO - DAG(s) 'my_spotify_dag' retrieved from /opt/airflow/dags/spotify_dag.py
+[2024-05-25T16:59:34.133+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:59:34.132+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-25T16:59:34.162+0000] {logging_mixin.py:188} INFO - [2024-05-25T16:59:34.161+0000] {dag.py:3954} INFO - Setting next_dagrun for my_spotify_dag to 2024-05-25 00:00:00+00:00, run_after=2024-05-26 00:00:00+00:00
+[2024-05-25T16:59:34.187+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/spotify_dag.py took 1.721 seconds
