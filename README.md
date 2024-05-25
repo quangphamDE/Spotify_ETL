@@ -13,7 +13,7 @@
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `token` | `string` | **Required**. your access token in spotify |
-| `client_id` | `string` |**Required**. your access token in spotify|
+| `client_id` | `string` |**Required**. your client id in spotify|
 
 
 
